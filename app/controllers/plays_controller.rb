@@ -9,7 +9,7 @@ class PlaysController < ApplicationController
 
     def create 
        @play = Play.create(play_params)
-       redirect_to artists_path(@artist)
+       redirect_to artist_path(@play.artist)
     end 
 
     private 
