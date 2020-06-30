@@ -1,0 +1,8 @@
+<h1>Artists</h1>
+
+<% @artists.each do |artist| %>
+    <p><%= link_to artist.name, artist_path(artist) %></p>
+ <% end %>
+
+ <p><%= link_to "***Connect an Artist with an Instrument***", new_play_path%></p>
+ <p><%= link_to "***Add a New Artist***", new_artist_path%></p>

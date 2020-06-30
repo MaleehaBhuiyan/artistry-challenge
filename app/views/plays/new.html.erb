@@ -1,0 +1,13 @@
+<h1>Match Artist with Instrument</h1>
+
+<%= form_for(@play) do |f| %>
+    
+    <%= f.label :artist %>
+    <%= f.collection_select :artist_id, @artists, :id, :name%>
+
+    <%= f.label :instrument %>
+    <%= f.collection_select :instrument_id, @instruments, :id, :name%>
+
+    <%= f.submit %>
+    
+<% end %>
